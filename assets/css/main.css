@@ -655,7 +655,7 @@ body {
     max-width: 100%;
     height: auto;
     border-radius: 0;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
     transition: all 0.3s ease;
 }
 
@@ -994,13 +994,14 @@ body {
 }
 
 .layout-content {
-    background: rgba(0, 0, 0, 0.85);
+    background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(10px);
     border-radius: 20px;
     padding: 60px 50px;
     max-width: 500px;
     color: #fff;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
 }
 
 .layout-title {
@@ -1039,7 +1040,7 @@ body {
 .dropdown-select {
     width: 100%;
     padding: 18px 20px;
-    background: rgba(0, 0, 0, 0.6);
+    background: rgba(0, 0, 0, 0.2);
     border: 1px solid rgba(255, 255, 255, 0.3);
     border-radius: 12px;
     color: #fff;
@@ -1053,7 +1054,7 @@ body {
 .dropdown-select:focus {
     outline: none;
     border-color: rgba(255, 255, 255, 0.6);
-    background: rgba(0, 0, 0, 0.8);
+    background: rgba(0, 0, 0, 0.3);
 }
 
 .dropdown-select:disabled {
