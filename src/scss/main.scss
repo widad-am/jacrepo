@@ -1541,3 +1541,69 @@ body {
         text-align: center;
     }
 } 
+// IMPORTS DE POLICES
+// ========================================
+@font-face {
+  font-family: 'Aileron';
+  src: url('../../assets/fonts/Aileron-Regular-10.7047c8f.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Crimson Text';
+  src: url('../../assets/fonts/Crimson-Text-Medium.c3f0a04.ttf') format('truetype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  src: url('../../assets/fonts/SourceSansPro-Regular.7a9975d.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+    font-family: 'Aileron';
+    src: url('../../assets/fonts/Aileron-Regular-10.7047c8f.ttf') format('truetype'),
+         url('../../assets/fonts/Aileron-Regular-10.b008e0c.woff') format('woff'),
+         url('../../assets/fonts/Aileron-Regular-10.309f434.eot') format('embedded-opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Crimson Text';
+    src: url('../../assets/fonts/Crimson-Text-Medium.c3f0a04.ttf') format('truetype'),
+         url('../../assets/fonts/Crimson-Text-Medium.6205e7f.woff') format('woff'),
+         url('../../assets/fonts/Crimson-Text-Medium.9edb741.woff') format('woff'),
+         url('../../assets/fonts/crimson_text_roman.1d85438.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Source Sans Pro';
+    src: url('../../assets/fonts/SourceSansPro-Regular.7a9975d.otf') format('opentype'),
+         url('../../assets/fonts/SourceSansPro-Bold-2.751d4a1.otf') format('opentype'),
+         url('../../assets/fonts/SourceSansPro-Light.0d49a91.otf') format('opentype'),
+         url('../../assets/fonts/SourceSansPro-Semibold.94f13d0.otf') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Roboto';
+    src: url('../../assets/fonts/Roboto-Thin.92b0800.ttf') format('truetype');
+    font-weight: 100;
+    font-style: normal;
+  }
+  
+  @font-face {
+    font-family: 'Open Sans';
+    src: url('../../assets/fonts/Open-Sans.a958155.ttf') format('truetype'),
+         url('../../assets/fonts/Open-Sans.8b1093e.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+  
