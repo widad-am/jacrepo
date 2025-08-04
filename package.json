@@ -3,9 +3,8 @@
   "version": "1.0.0",
   "scripts": {
     "build": "npm run build:css && npm run build:js",
-    "build:css": "node node_modules/sass/sass.js src/scss/main.scss assets/css/main.css --style=compressed",
-    "build:js": "node ./node_modules/webpack/bin/webpack.js --mode production --progress --stats-error-details",
-    "watch:css": "sass src/scss/main.scss:assets/css/main.css --watch",
+    "build:js": "node ./node_modules/webpack/bin/webpack.js --config webpack.config.js",
+    "build:css": "node ./node_modules/sass/sass.js src/scss/main.scss public/assets/css/main.css --style=compressed",
     "watch:js": "webpack --watch --mode development",
     "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"npm run start\"",
     "start": "live-server --port=3000 --open=/index.html"
