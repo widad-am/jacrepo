@@ -9,8 +9,7 @@
     "build:css": "node node_modules/sass/sass.js src/scss/main.scss assets/css/main.css --style=compressed",
     "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"npm run start\"",
     "watch:css": "sass src/scss/main.scss:assets/css/main.css --watch",
-    "build:js": "webpack --mode production --progress --display-error-details"
-,
+    "build:js": "webpack --mode production --progress --stats-error-details",
     "lint": "eslint src/js/**/*.js",
     "lint:fix": "eslint src/js/**/*.js --fix"
   },
