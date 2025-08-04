@@ -1,8 +1,9 @@
 {
-    "builds": [
-      { "src": "index.html", "use": "@vercel/static" }
-    ],
-    "outputDirectory": "public"
+    "cleanUrls": true,
+    "trailingSlash": false,
+    "routes": [
+      { "src": "/assets/(.*)", "dest": "/assets/$1" },
+      { "src": "/(.*)", "dest": "/index.html" }
+    ]
   }
-  npm install -g serve
   
