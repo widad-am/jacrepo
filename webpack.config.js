@@ -3,7 +3,8 @@ const path = require('path');
 module.exports = {
   entry: './src/js/main.js',
   output: {
-    path: path.resolve(__dirname, 'assets/js'),
+    path: path.resolve(__dirname, 'public', 'assets', 'js'),
+    publicPath: '/assets/js/',
     filename: 'main.js'
   },
   module: {
@@ -11,15 +12,13 @@ module.exports = {
       {
         test: /\.js$/,
         exclude: /node_modules/,
-        use: {
-          loader: 'babel-loader'
-        }
+        use: 'babel-loader'
       },
       {
-        test: /\.(woff|woff2|eot|ttf|otf)$/,
+        test: /\.(woff2?|ttf|otf|eot)$/,
         type: 'asset/resource',
         generator: {
-          filename: '../fonts/[name][ext]'
+          filename: path.join('../fonts', '[name][ext]')
         }
       }
     ]
