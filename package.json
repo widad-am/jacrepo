@@ -1,0 +1,35 @@
+{
+  "name": "jac-clone",
+  "version": "1.0.0",
+  "description": "Clone du site JAC Motors avec animations GSAP",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "build": "npm run build:css && npm run build:js",
+    "build:css": "sass src/scss/main.scss:assets/css/main.css --style compressed",
+    "build:js": "webpack --mode production",
+    "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"npm run start\"",
+    "watch:css": "sass src/scss/main.scss:assets/css/main.css --watch",
+    "watch:js": "webpack --mode development --watch",
+    "lint": "eslint src/js/**/*.js",
+    "lint:fix": "eslint src/js/**/*.js --fix"
+  },
+  "dependencies": {
+    "gsap": "^3.12.2",
+    "swiper": "^11.0.5"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2",
+    "eslint": "^8.56.0",
+    "live-server": "^1.2.2",
+    "sass": "^1.69.5",
+    "webpack": "^5.89.0",
+    "webpack-cli": "^5.1.4",
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "babel-loader": "^9.1.3"
+  },
+  "keywords": ["jac", "motors", "clone", "gsap", "swiper"],
+  "author": "JAC Clone Team",
+  "license": "MIT"
+} 
