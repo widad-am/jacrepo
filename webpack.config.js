@@ -4,8 +4,9 @@ module.exports = {
   mode: 'production',  // ← ensures default optimizations and silences the warning
   entry: './src/js/main.js',
   output: {
-    path: path.resolve(__dirname, 'public/assets/js'),
+    path: path.resolve(__dirname, 'public/assets'),
     filename: 'main.js',
+  
     publicPath: '/assets/js/',
   },
   module: {
