@@ -7,10 +7,10 @@
     "start": "live-server --port=3000 --open=/index.html",
     "build": "npm run build:css && npm run build:js",
     "build:css": "node node_modules/sass/sass.js src/scss/main.scss assets/css/main.css --style=compressed",
-    "build:js": "webpack --mode production",
     "dev": "concurrently \"npm run watch:css\" \"npm run watch:js\" \"npm run start\"",
     "watch:css": "sass src/scss/main.scss:assets/css/main.css --watch",
-    "build:js": "webpack --mode production",
+    "build:js": "webpack --mode production --progress --display-error-details"
+,
     "lint": "eslint src/js/**/*.js",
     "lint:fix": "eslint src/js/**/*.js --fix"
   },
