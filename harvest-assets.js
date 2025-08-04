@@ -5,7 +5,7 @@ const http = require('http');
 
 // Configuration
 const BASE_URL = 'https://jacen.jac.com.cn';
-const OUTPUT_DIR = './assets';
+const OUTPUT_DIR = './assets'; 
 
 // Créer les dossiers de sortie
 const dirs = ['images', 'videos', 'fonts', 'css', 'js'];
